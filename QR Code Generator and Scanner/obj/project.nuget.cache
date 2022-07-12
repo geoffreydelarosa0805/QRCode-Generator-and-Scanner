@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "oBdQ2sU+/nCftMjbMthN+R2+qwx1OoZgMCgYrcCe3J29nb1r9MPkgkK6aBWQrMXwLVC1VocN5vryEwVGBkfZLA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\Documents\\Visual Studio 2022\\QR Code Generator and Scanner\\QR Code Generator and Scanner\\QR Code Generator and Scanner.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\qrcoder\\1.3.3\\qrcoder.1.3.3.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.drawing.common\\4.5.0-preview1-25914-04\\system.drawing.common.4.5.0-preview1-25914-04.nupkg.sha512"
+  ],
+  "logs": []
+}
