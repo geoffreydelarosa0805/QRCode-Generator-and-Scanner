@@ -20,3 +20,7 @@ C:\Users\HP\Documents\Visual Studio 2022\QR Code Generator and Scanner\QR Code G
 C:\Users\HP\Documents\Visual Studio 2022\QR Code Generator and Scanner\QR Code Generator and Scanner\obj\Debug\net6.0-windows\QR Code Generator and Scanner.pdb
 C:\Users\HP\Documents\Visual Studio 2022\QR Code Generator and Scanner\QR Code Generator and Scanner\obj\Debug\net6.0-windows\QR Code Generator and Scanner.genruntimeconfig.cache
 C:\Users\HP\Documents\Visual Studio 2022\QR Code Generator and Scanner\QR Code Generator and Scanner\obj\Debug\net6.0-windows\ref\QR Code Generator and Scanner.dll
+C:\Users\HP\Documents\Visual Studio 2022\QR Code Generator and Scanner\QR Code Generator and Scanner\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\HP\Documents\Visual Studio 2022\QR Code Generator and Scanner\QR Code Generator and Scanner\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\HP\Documents\Visual Studio 2022\QR Code Generator and Scanner\QR Code Generator and Scanner\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\Users\HP\Documents\Visual Studio 2022\QR Code Generator and Scanner\QR Code Generator and Scanner\bin\Debug\net6.0-windows\zxing.dll
