@@ -43,7 +43,7 @@ namespace QR_Code_Generator_and_Scanner
             FinalFrame = new VideoCaptureDevice(CaptureDevice[comboBoxDevice.SelectedIndex].MonikerString);
             FinalFrame.NewFrame += new NewFrameEventHandler(CaptureDevice_NewFrame);
             FinalFrame.Start();
-            
+            timer.Start();
         }
 
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
@@ -51,6 +51,18 @@ namespace QR_Code_Generator_and_Scanner
             pictureBoxCamera.Image = (Bitmap)eventArgs.Frame.Clone();
         }
 
-       
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            if (pictureBoxCamera.Image != null)
+            {
+                BarcodeReader reader = new BarcodeReader();
+                Result result = reader.Decode((Bitmap)pictureBoxCamera.Image);
+                if (result != null)
+                {
+                    textBoxIdentification.Text = result.ToString();
+                    timer.Stop();
+                }
+            }
+        }
     }
 }

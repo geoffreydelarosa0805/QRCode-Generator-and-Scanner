@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelIdentification = new System.Windows.Forms.Label();
             this.buttonStart = new System.Windows.Forms.Button();
             this.textBoxIdentification = new System.Windows.Forms.TextBox();
             this.comboBoxDevice = new System.Windows.Forms.ComboBox();
             this.pictureBoxCamera = new System.Windows.Forms.PictureBox();
             this.labelCamera = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCamera)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,6 +93,11 @@
             this.labelCamera.TabIndex = 8;
             this.labelCamera.Text = "Camera :";
             // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // FormQRCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -119,5 +126,6 @@
         private ComboBox comboBoxDevice;
         private PictureBox pictureBoxCamera;
         private Label labelCamera;
+        private System.Windows.Forms.Timer timer;
     }
 }
