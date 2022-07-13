@@ -118,6 +118,7 @@
             this.Controls.Add(this.labelCamera);
             this.Name = "FormQRCode";
             this.Text = "QR Code Scanner";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormQRCode_FormClosing);
             this.Load += new System.EventHandler(this.FormQRCode_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCamera)).EndInit();
             this.ResumeLayout(false);

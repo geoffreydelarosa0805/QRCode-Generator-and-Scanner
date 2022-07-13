@@ -41,10 +41,10 @@ namespace QR_Code_Generator_and_Scanner
             file.Close();
 
             QRCodeGenerator qr = new QRCodeGenerator();
-            QRCodeData data = qr.CreateQrCode(dateTimePicker_DateofFilling.Text + "" + textBox_FirstName.Text + "" + textBox_Surname.Text + "" + textBox_Gender.Text
-             + "" + textBox_Birthdate.Text + "" + textBox_Age.Text + "" + textBox_Address.Text + "" + textBox_Email.Text + "" + textBox_PhoneNo.Text
-             + "" + textBox_Telephone.Text + "" + textBox_PersonName.Text + "" + textBox_Relationship.Text + "" + textBox_EmailAddress.Text
-             + "" + textBox_ContactNo.Text + "" + textBox_PersonAddress.Text + "" + textBox_Occupation.Text + "" + textBox_WorkplaceAddress.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCodeData data = qr.CreateQrCode(("Date of Filling : " + dateTimePicker_DateofFilling.Text) + ("First Name : " + textBox_FirstName.Text) + ("Surname : " + textBox_Surname.Text) + ("Gender : " + textBox_Gender.Text)
+             + ("Birthdate : " + textBox_Birthdate.Text) + ("Age : " + textBox_Age.Text) + ("Address : " + textBox_Address.Text) + ("Email : " + textBox_Email.Text) + ("Phone No. : " + textBox_PhoneNo.Text)
+             + ("Telephone : " + textBox_Telephone.Text) + ("Person's Name : " + textBox_PersonName.Text) + ("Relationship : " + textBox_Relationship.Text) + ("Email Address : " + textBox_EmailAddress.Text)
+             + ("Contact No. : " + textBox_ContactNo.Text) + ("Person's Address : " + textBox_PersonAddress.Text) + ("Occupation : " + textBox_Occupation.Text) + ("Workplace Address : " + textBox_WorkplaceAddress.Text), QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
             picQRCode.Image = code.GetGraphic(5);
         }

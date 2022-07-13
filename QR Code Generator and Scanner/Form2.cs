@@ -61,8 +61,16 @@ namespace QR_Code_Generator_and_Scanner
                 {
                     textBoxIdentification.Text = result.ToString();
                     timer.Stop();
+                    if (FinalFrame.IsRunning)
+                        FinalFrame.Stop();
                 }
             }
+        }
+
+        private void FormQRCode_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (FinalFrame.IsRunning)
+                FinalFrame.Stop();
         }
     }
 }
