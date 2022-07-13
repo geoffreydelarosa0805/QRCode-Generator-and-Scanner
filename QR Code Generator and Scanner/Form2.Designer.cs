@@ -42,14 +42,18 @@
             // labelIdentification
             // 
             this.labelIdentification.AutoSize = true;
+            this.labelIdentification.BackColor = System.Drawing.Color.Transparent;
+            this.labelIdentification.ForeColor = System.Drawing.Color.White;
             this.labelIdentification.Location = new System.Drawing.Point(456, 35);
             this.labelIdentification.Name = "labelIdentification";
-            this.labelIdentification.Size = new System.Drawing.Size(77, 15);
+            this.labelIdentification.Size = new System.Drawing.Size(83, 15);
             this.labelIdentification.TabIndex = 13;
-            this.labelIdentification.Text = "Identification";
+            this.labelIdentification.Text = "Identification :";
             // 
             // buttonStart
             // 
+            this.buttonStart.BackgroundImage = global::QR_Code_Generator_and_Scanner.Properties.Resources.contact_tracing_twitter;
+            this.buttonStart.ForeColor = System.Drawing.Color.White;
             this.buttonStart.Location = new System.Drawing.Point(344, 31);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(72, 23);
@@ -87,6 +91,8 @@
             // labelCamera
             // 
             this.labelCamera.AutoSize = true;
+            this.labelCamera.BackColor = System.Drawing.Color.Transparent;
+            this.labelCamera.ForeColor = System.Drawing.Color.White;
             this.labelCamera.Location = new System.Drawing.Point(36, 34);
             this.labelCamera.Name = "labelCamera";
             this.labelCamera.Size = new System.Drawing.Size(54, 15);
@@ -102,6 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::QR_Code_Generator_and_Scanner.Properties.Resources.contact_tracing_twitter;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.labelIdentification);
             this.Controls.Add(this.buttonStart);
